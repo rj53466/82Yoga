@@ -1,18 +1,19 @@
 import { ServiceCategory, Testimonial } from './types';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-
+const BASE = import.meta.env.BASE_URL;
 export const BRAND_NAME = "Blissful Aura Yoga Studio";
 export const FOUNDER_NAME = "Neetu K Verma";
 export const TAGLINE = "Holistic Healing for Mind, Body And Soul";
 export const SUB_TAGLINE = "Heal • Transform • Glow";
 
 // CENTRALIZED IMAGES
-// Update these URLs to change images across the website
+
 export const IMAGES = {
-  logo: "/logo.png",
+  logo: `${BASE}logo.png`,
   hero: "https://images.unsplash.com/photo-1758599878920-d42cccc4aeca?auto=format&fit=crop&w=800&q=80",
-  founder: "/founder.jpeg"
+  founder: `${BASE}founder.jpeg`
 };
+
 
 export const CONTACT_INFO = {
   phone: "+91 9902632359",
@@ -101,11 +102,11 @@ export const FOUNDER_BIO = {
   associations: [
     {
       name: "Reshape Nation",
-      logo: "/reshape-nation.png"
+      logo: `${BASE}reshape-nation.png`
     },
     {
       name: "RisingS-He Community",
-      logo: "/rising-she.png"
+      logo: `${BASE}rising-she.png`
     }
   ],
   mentorship: "Neetu mentors a small circle of professionals and enthusiasts in Yoga, Nutrition, and Skin Wellness."
